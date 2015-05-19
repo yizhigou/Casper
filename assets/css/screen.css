@@ -115,6 +115,16 @@ table { border-collapse: collapse; border-spacing: 0; }
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "casper-weibo";
+    src:url("../fonts/casper-weibo.eot");
+    src:url("../fonts/casper-weibo.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/casper-weibo.woff") format("woff"),
+        url("../fonts/casper-weibo.ttf") format("truetype"),
+        url("../fonts/casper-weibo.svg#icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
@@ -147,6 +157,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 .icon-facebook:before {
     content: "\f604";
+}
+.icon-weibo:before {
+    font-family: casper-weibo;
+    font-size: 2rem;
+    content: "\e800";
 }
 .icon-arrow-left:before {
     content: "\f605";
@@ -1181,7 +1196,7 @@ body:not(.post-template) .post-title {
 .post-footer .share a {
     font-size: 1.8rem;
     display: inline-block;
-    margin: 1rem 1.6rem 1.6rem 0;
+    margin: 1rem 1rem 1.6rem 0;
     color: #BBC7CC;
     text-decoration: none;
 }
