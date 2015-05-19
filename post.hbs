@@ -70,8 +70,26 @@
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
+                <a class="icon-weibo" href="http://service.weibo.com/share/share.php?url={{url absolute="true"}}&title={{@blog.title}} - {{title}} - {{exce$
+                   onclick="window.open(this.href, 'weibo-share', 'width=490,height=530');return false;">
+                   <span class="hidden">Weibo</span>
+                </a>
             </section>
+        
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'var4'; // required: replace example with your forum shortname
+                var disqus_identifier = '{{post.id}}';
 
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">...</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         </footer>
 
     </article>
